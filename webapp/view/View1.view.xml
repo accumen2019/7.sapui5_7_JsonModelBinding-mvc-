@@ -1,0 +1,29 @@
+<mvc:View controllerName="DemoProject2DemoProject2.controller.View1" xmlns:f="sap.ui.layout.form" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<f:SimpleForm id="idSimpleForm"
+					editable="true"
+					layout="ResponsiveGridLayout"
+					title="Form Title">
+					<f:content>
+						<Label text = "First Name"/>
+						<Input value="{JSON>/Form/0/firstname}"/>
+						<Label text = "Last Name"/>
+						<Input value="{JSON>/Form/0/lastname}"/>
+						<Label text = "Height"/>
+						<Input value="{JSON>/Form/0/height}"/>
+						<Label text = "Weight"/>
+						<Input value="{JSON>/Form/0/weight}"/>
+						<Label text = "Gender"/>
+						<Input value="{JSON>/Form/0/gender}"/>
+						
+					</f:content>	
+					</f:SimpleForm>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
